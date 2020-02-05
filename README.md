@@ -1,3 +1,3 @@
 # AlgoPractice
 
-Just solutions to algo I've done to keep track.
+Just solutions to algos I've done.
