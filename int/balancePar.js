@@ -10,3 +10,5 @@ let arr = s.split('')
               : stack.push(arr[i]);
     }
     return stack.length;
+
+    
