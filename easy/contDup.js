@@ -4,7 +4,7 @@
 
 var containsDuplicate = function(nums) {
     let hash = {};
-    for (var i = nums.length -1; i >=0 ; i--) {
+    for (let i = nums.length -1; i >=0 ; i--) {
         if (hash[nums[i]]) {
             return true;
         } else {
