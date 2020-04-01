@@ -17,7 +17,7 @@ function duplicates(arr){
   }
   
   
-  //
+  //more concise
 
   
   
