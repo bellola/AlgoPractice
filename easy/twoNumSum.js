@@ -22,4 +22,20 @@ function twoNumberSum(array, targetSum) {
 
 
 
-//a
+//solution when asked indexes, not values
+
+var twoSum = function(array, targetSum) {
+	
+    let hash = {}
+    
+    for(let i = 0; i < array.length; i++){
+        let curr = array[i]
+        let y = targetSum - curr
+        if(hash[y] === true){
+            return [i, array.indexOf(y)]
+        } else{
+            hash[curr] = true
+        }
+    }
+        return []
+}
