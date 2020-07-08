@@ -18,3 +18,5 @@ function jumpingOnClouds(c) {
   
     return jumps
   }
+
+  //keep looping until i reaches c.length checking everytime if c at i+2 and adding 1 or 2 to i each time and adding 1 to jump each time
