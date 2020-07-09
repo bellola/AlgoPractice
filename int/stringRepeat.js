@@ -1,13 +1,16 @@
-let x = Math.floor(n / s.length);
-    let count = (s.split("a").length - 1) * x;
-    let rem = n % s.length;
+function repeatedStringm(s,n){
+        let x = Math.floor(n / s.length);
+        let count = (s.split("a").length - 1) * x;
+        let rem = n % s.length;
 
-    for (var i = 0; i < rem; i++) {
-        if (s.charAt(i) === "a") {
-            count++;
+        for (var i = 0; i < rem; i++) {
+            if (s.charAt(i) === "a") {
+                count++;
+            }
         }
-    }
-    return count
+        return count
+}
+
 
     
 // We must create three variables; One, x, which is the amount of times the full string s appears in the given length n of the infinite string;
