@@ -214,4 +214,12 @@ class Node {
         return data
      
        }
+    hasRoom(){
+        if(this.size>=this.maxSize) return false
+        return true
+      }
+    isEmpty(){
+        if(this.size !== 0) return false
+        return true
+      }
   }
