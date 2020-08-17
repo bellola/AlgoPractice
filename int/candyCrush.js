@@ -9,3 +9,23 @@
 // Explanation:
 // 1. Remove 3 'a': "aaabbbc" => "bbbc"
 // 2. Remove 3 'b': "bbbc" => "c"
+function candyCrush(str){
+    let stack = []
+    let count = 0
+    for(let i = 0; i < str.length; i++){
+      let last = stack[stack.length-1]
+      let char = str[i]
+     if(char !== last && count >=3){
+       while(count>0){
+         stack.pop()
+         count--
+       }
+     }
+     stack.push(char)
+     count++
+    }
+  
+    if(!stack.length) return ""
+    return stack.join('')
+  }
+  
