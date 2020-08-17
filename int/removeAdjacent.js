@@ -11,3 +11,4 @@ function removeAdjacent(){
 
     return stack.join('')
 }
+//
