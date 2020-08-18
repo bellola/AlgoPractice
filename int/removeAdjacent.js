@@ -12,3 +12,5 @@ function removeAdjacent(){
     return stack.join('')
 }
 //this is a test
+//this is a test
+//this is a test
