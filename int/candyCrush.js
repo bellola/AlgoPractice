@@ -13,19 +13,32 @@ function candyCrush(str){
     let stack = []
     let count = 0
     for(let i = 0; i < str.length; i++){
+      console.log(count)
+      console.log(stack)
       let last = stack[stack.length-1]
       let char = str[i]
+      if(!stack.length){
+         stack.push(char);
+        count++
+      }
+      if(char === last){
+        stack.push(char);
+        count++
+      }
      if(char !== last && count >=3){
+       let j = 0
        while(count>0){
          stack.pop()
          count--
        }
+       stack.push(char)
+       count++
      }
-     stack.push(char)
-     count++
+     
+     
     }
   
     if(!stack.length) return ""
     return stack.join('')
-  }
+  
   
