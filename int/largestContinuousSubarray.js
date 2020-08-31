@@ -13,4 +13,4 @@ var maxSubArray = function(nums) {
     }
     
     return max;
-};
+}; 

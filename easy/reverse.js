@@ -14,7 +14,7 @@ var reverseString = function(s) {
     }
 };
 
-//destructuring
+//destructuring assigment
 
 var reverseString = function(s) {
     let i = 0, j = s.length - 1;
