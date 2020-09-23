@@ -1,8 +1,6 @@
 var findClosestElements = function(arr, k, x) {
     
-    let hash = {};
-    
-    let res = [];
+    let temp = [];
     
     if(x<arr[0]) return arr.slice(0,k);
     
@@ -10,14 +8,17 @@ var findClosestElements = function(arr, k, x) {
     
     for(let i = 0; i < arr.length;i++){
         let diff = Math.abs(x-arr[i])
-        
-        hash[arr[i]] = diff
+        temp.push([arr[i], diff])
     }
     
-    console.log(hash)
+    temp.sort((a,b) => a[1] - b[1])
     
-    for(let key of hash){
-        
-    }
+    temp = temp.slice(0,k)
+    
+    temp.forEach(arr =>{
+        arr.pop()
+    })
+    
+    return temp.sort((a,b) => a-b)
     
 };
