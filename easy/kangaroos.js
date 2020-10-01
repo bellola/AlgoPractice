@@ -1,7 +1,7 @@
 function kangaroo(x1, v1, x2, v2) {
 
     let first = x1;
-     let second = x2;
+    let second = x2;
      for(let i = Math.min(x1,x2); i < 10000; i++){
        if(first === second) return "YES"
        first+=v1
@@ -9,7 +9,7 @@ function kangaroo(x1, v1, x2, v2) {
      }
    
    return "NO"
-   }
+}
 
    //better
 
