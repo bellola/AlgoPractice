@@ -40,8 +40,5 @@ function moveLargest(a){
   maxArr = []
   i--
  }
- 
- 
- 
    return res
  }
