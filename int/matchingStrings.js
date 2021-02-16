@@ -12,7 +12,4 @@ function matchingStrings(strings, queries) {
     })
     
     return res
-    
-    
-
 }
